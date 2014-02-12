@@ -1,0 +1,28 @@
+/*
+ * Globals
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+hr {
+  margin: 40px;
+}
+
+/*
+ * Base structure
+ */
+
+.jumbotron-inverse {
+  background-color: #282828;
+  background-image: linear-gradient(to bottom,#222 0,#282828 100%);
+}
