@@ -4,7 +4,7 @@
             <div class="input-group input-group-lg" ng-class="{error: mailForm.email.$invalid && !mailForm.email.$pristine}">
                 <input type="email" name="email" ng-model="folkeux.email" class="form-control" placeholder="votre email" required>
                 <span class="input-group-btn">
-                    <button class="btn btn-success" ng-click="save()" ng-disabled="myForm.$invalid">Envoyer</button>
+                    <button class="btn btn-success" ng-click="save()" ng-disabled="mailForm.$invalid">Envoyer</button>
                 </span>
             </div>
             <span ng-show="mailForm.email.$error.required && !mailForm.email.$pristine" class="help-inline">
