@@ -20,8 +20,11 @@ angular.module('tradnfolk', ['ngRoute', 'firebase'])
 .controller('MailCtrl', function($scope, $location, $timeout, Folkeux) {
   $scope.save = function() {
     $scope.folkeux.created_at = Date.now();
-    Folkeux.$add($scope.folkeux, function() {
-      $timeout(function() { $location.path('/'); });
+    Folkeux.$add($scope.folkeux, function(error) {
+      $timeout(function() {
+          $scope.mailSent = (error === null);
+          // $location.path('/');
+      });
     });
   };
 });
