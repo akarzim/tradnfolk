@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="tradnfolk">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,15 @@
         <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
         <title>Trad'n'Folk</title>
+
+        <!-- AngularJS core JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-resource.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-route.min.js"></script>
+
+        <!-- Firebase core JS -->
+        <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+        <script src="https://cdn.firebase.com/libs/angularfire/0.5.0/angularfire.min.js"></script>
 
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -24,6 +33,7 @@
 
         <!-- Custom styles for this template -->
         <link href="cover.css" rel="stylesheet">
+        <script src="tradnfolk.js"></script>
     </head>
 
     <body>
@@ -54,19 +64,7 @@
             <p class="lead">Découvrez les prochains <strong>Bals Folk</strong> et <strong>Fest-Noz</strong> près de chez vous.</p>
             <hr>
             <p class="lead">Renseignez votre adresse email pour être informé de la mise en ligne du site !</p>
-
-            <form id="mailme_form" method="post">
-                <div class="row">
-                    <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
-                        <div class="input-group input-group-lg">
-                            <input type="email" class="form-control" placeholder="votre email">
-                            <span class="input-group-btn">
-                                <button class="btn btn-success" type="submit">Envoyer</button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </form>
+            <div ng-view></div>
         </div>
     </div>
 

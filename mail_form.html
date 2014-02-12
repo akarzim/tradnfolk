@@ -1,0 +1,15 @@
+<form name="mailForm">
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
+            <div class="input-group input-group-lg" ng-class="{error: mailForm.email.$invalid && !mailForm.email.$pristine}">
+                <input type="email" name="email" ng-model="folkeux.email" class="form-control" placeholder="votre email" required>
+                <span class="input-group-btn">
+                    <button class="btn btn-success" ng-click="save()" ng-disabled="myForm.$invalid">Envoyer</button>
+                </span>
+            </div>
+            <span ng-show="mailForm.email.$error.required && !mailForm.email.$pristine" class="help-inline">
+                Required {{mailForm.email.$pristine}}
+            </span>
+        </div>
+    </div>
+</form>
