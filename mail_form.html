@@ -3,10 +3,10 @@
         <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
             <div class="input-group input-group-lg" ng-class="{error: mailForm.email.$invalid && !mailForm.email.$pristine}">
                 <input type="email" name="email" ng-model="folkeux.email" class="form-control" placeholder="votre email" required>
-                <span class="input-group-btn">
-                    <button class="btn btn-primary" ng-click="save()" ng-disabled="mailForm.$invalid" ng-show="!mailSent">Envoyer</button>
+                <span class="input-group-btn" ng-show="!mailSent">
+                    <button class="btn btn-primary" ng-click="save()" ng-disabled="mailForm.$invalid">Envoyer</button>
                 </span>
-                <span class="input-group-addon bg-success" ng-show="mailSent"><i class="fa fa-check"> OK</i></span>
+                <span class="input-group-addon" ng-show="mailSent"><i class="fa fa-check"> Merci !</i></span>
             </div>
             <span ng-show="mailForm.email.$error.required && !mailForm.email.$pristine" class="help-inline">
                 Required {{mailForm.email.$pristine}}
