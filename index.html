@@ -6,18 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+        <link rel="shortcut icon" href="favicon.ico">
 
         <title>Trad'n'Folk</title>
-
-        <!-- AngularJS core JS -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-resource.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-route.min.js"></script>
-
-        <!-- Firebase core JS -->
-        <script src="https://cdn.firebase.com/v0/firebase.js"></script>
-        <script src="https://cdn.firebase.com/libs/angularfire/0.5.0/angularfire.min.js"></script>
 
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
@@ -31,9 +22,8 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
 
-        <!-- Custom styles for this template -->
+        <!-- Custom styles -->
         <link href="cover.css" rel="stylesheet">
-        <script src="tradnfolk.js"></script>
     </head>
 
     <body>
@@ -59,20 +49,30 @@
         </nav>
 
         <div class="container">
-        <div class="jumbotron jumbotron-inverse">
-            <h1 class="cover-heading">Prochainement</h1>
-            <p class="lead">Découvrez les prochains <strong>Bals Folk</strong> et <strong>Fest-Noz</strong> près de chez vous.</p>
-            <hr>
-            <p class="lead">Renseignez votre adresse email pour être informé de la mise en ligne du site !</p>
-            <div ng-view></div>
+            <div class="jumbotron jumbotron-inverse">
+                <h1 class="cover-heading">Prochainement</h1>
+                <p class="lead">Découvrez les prochains <strong>Bals Folk</strong> et <strong>Fest-Noz</strong> près de chez vous.</p>
+                <hr>
+                <p class="lead">Renseignez votre adresse email pour être informé de la mise en ligne du site !</p>
+                <div ng-view></div>
+            </div>
         </div>
-    </div>
 
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
+        <!-- Bootstrap core JavaScript -->
         <!-- Placed at the end of the document so the pages load faster -->
         <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/holder/2.3.0/holder.min.js"></script>
+
+        <!-- AngularJS core JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-resource.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular-route.min.js"></script>
+
+        <!-- Firebase core JS -->
+        <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+        <script src="https://cdn.firebase.com/libs/angularfire/0.5.0/angularfire.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="tradnfolk.js"></script>
     </body>
 </html>

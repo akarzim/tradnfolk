@@ -21,10 +21,7 @@ angular.module('tradnfolk', ['ngRoute', 'firebase'])
   $scope.save = function() {
     $scope.folkeux.created_at = Date.now();
     Folkeux.$add($scope.folkeux, function(error) {
-      $timeout(function() {
-          $scope.mailSent = (error === null);
-          // $location.path('/');
-      });
+      $timeout(function() { $scope.mailSent = (error === null); });
     });
   };
 });
