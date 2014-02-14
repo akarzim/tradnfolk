@@ -9,12 +9,12 @@ angular.module('tradnfolk', ['ngRoute', 'firebase'])
 .config(function($routeProvider, $locationProvider) {
   $locationProvider.html5Mode(true).hashPrefix('!');
   $routeProvider
-    .when('/', {
+    .when('/tradnfolk/', {
       controller:'MailCtrl',
       templateUrl:'mail_form.html'
     })
     .otherwise({
-      redirectTo:'/'
+      redirectTo:'/tradnfolk/'
     });
 })
 
