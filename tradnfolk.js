@@ -6,7 +6,8 @@ angular.module('tradnfolk', ['ngRoute', 'firebase'])
   return $firebase(new Firebase(fbURL));
 })
 
-.config(function($routeProvider) {
+.config(function($routeProvider, $locationProvider) {
+  $locationProvider.html5Mode(true).hashPrefix('!');
   $routeProvider
     .when('/', {
       controller:'MailCtrl',
